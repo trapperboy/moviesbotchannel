@@ -102,7 +102,7 @@ async def who_is(client, message):
         os.remove(local_user_photo)
     else:
         pr0fess0r_99 = [[ InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close') ]]
-        pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
+        pr0fess0r_99 = InlineKeyboardMarkup(MsBotTg)
         await message.reply_text(text=message_out_str, reply_markup=pr0fess0r_99, disable_notification=True)        
 
     await status_message.delete()
