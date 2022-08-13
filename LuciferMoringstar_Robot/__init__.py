@@ -54,7 +54,7 @@ class temp(object):
     BANNED_USERS = []
     ME = None # User Id
     Bot_Username = None # Username
-    Bot_Name = "LuciferMoringstar" # Full Name 
+    Bot_Name = "moviesbot" # Full Name 
     BUTTONS = {} # AutoFilter
     CURRENT = int(environ.get("SKIP", 2)) # Skip Files
     CANCEL = False # Cancel Index
