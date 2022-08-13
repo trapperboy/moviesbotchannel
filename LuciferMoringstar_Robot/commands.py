@@ -25,7 +25,7 @@
 # License Link : https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot/blob/LuciferMoringstar-Robot/LICENSE
 
 import random, asyncio
-from pyrogram import Client as lucifermoringstar_robot , filters, enums
+from pyrogram import Client as Betterfilteri_bot , filters, enums
 from LuciferMoringstar_Robot import temp, SUPPORT, PICS, ADMINS, CREATOR_USERNAME, CREATOR_NAME, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, SAVE_FILES, START_MESSAGE
 from LuciferMoringstar_Robot.translation import SETTINGS_MESSAGE, ADMIN_CMD_MESSAGE, ABOUT_MESSAGE, USAGE_MESSAGE
 from LuciferMoringstar_Robot.functions import get_settings, save_group_settings
@@ -39,7 +39,7 @@ from database.autofilter_mdb import get_file_details
 from LuciferMoringstar_Robot.functions import get_size
 
 @lucifermoringstar_robot.on_message(filters.command(["start"]) & filters.private, group=1)
-async def start(bot: lucifermoringstar_robot, update):
+async def start(bot: Betterfilteri_bot, update):
 
     if not await db.is_user_exist(update.from_user.id):
         await db.add_user(update.from_user.id)
